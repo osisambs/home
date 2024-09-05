@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       iconHtml: '<img src="assets/img/gif/hello-cute.gif" width="150" style="border: none;">',
       html: `
         Jangan lupa untuk mengunjungi
-        <a href="Sosial-Media.html" autofocus target='_blank'><b>Sosial Media</b></a>,
+        <a href="Sosial-Media.html" target='_blank'><b>Sosial Media</b></a>,
         kami iyaaaak!!
       `,
       showCloseButton: true,

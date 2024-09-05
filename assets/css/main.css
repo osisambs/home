@@ -515,6 +515,7 @@ width: 1080px;
 margin: auto;
 height: 100vh;
 }
+
 .panel {
 background-size: auto 100%;
 background-position: center;
@@ -529,6 +530,7 @@ position: relative;
 transition: flex 0.7s ease-in;
 top: 100px;
 }
+
 .panel h3 {
 font-size: 24px;
 position: absolute;
@@ -537,9 +539,11 @@ left: 20px;
 margin: 0;
 opacity: 0;
 }
+
 .panel.aktip{
 flex: 5;
 }
+
 .panel.aktip h3{
 opacity: 1;
 transition: opacity 0.3s ease-in 0.4s;
@@ -556,10 +560,45 @@ transition: opacity 0.3s ease-in 0.4s;
   }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navmenu ul {
+    display: block;
+    text-align: center;
+  }
+
+  .jumbotron-text h1 {
+    font-size: 1.5em;
+  }
+
+  .jumbotron-text h6 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .jumbotron-gen {
+    height: 20vh;
+  }
+
+  .jumbotron-text h1 {
+    font-size: 1.2em;
+  }
+
+  .jumbotron-text h6 {
+    font-size: 0.9em;
+  }
+}
+
 .jumbotron-gen {
   background-image: url('/assets/img/team/jumbotron.png');
   height: 247px;
   background-size: cover;
+  z-index: 1;
 }
 
 .jumbotron-backdrop {
@@ -584,7 +623,7 @@ button:active {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
+  z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
   padding-top: 10rem;
@@ -592,7 +631,6 @@ button:active {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  display: flex; /* Flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
 }
@@ -619,6 +657,8 @@ button:active {
 .close:hover,
 .close:focus {
   color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .zoomable {
