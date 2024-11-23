@@ -348,11 +348,7 @@ section {
 
 .elementor-widget-container {
   position: relative;
-<<<<<<< HEAD
   height: 90vh;
-=======
-  height: 80vh;
->>>>>>> fa7161c (awas banyak haters wkwkw)
   z-index: 3;
 }
 
@@ -393,11 +389,7 @@ section {
   z-index: 3;
 }
 
-<<<<<<< HEAD
 .visi {
-=======
-.visi p {
->>>>>>> fa7161c (awas banyak haters wkwkw)
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -407,7 +399,6 @@ section {
   font-size: larger;
   position: relative;
   z-index: 3;
-<<<<<<< HEAD
 }
 
 .elementor-grid-misi {
@@ -422,28 +413,10 @@ section {
     "col-empat col-lima ."; /* Mengatur grid areas */
   z-index: 9;
   text-align: justify;
-=======
-  word-wrap: break-word; /* Prevent overflow */
-}
-
-section.elementor-grid-misi {
-  position: relative;
-  font-family: "Raleway";
-  display: flex; /* Use Flexbox */
-  flex-wrap: wrap; /* Allow items to wrap */
-  justify-content: space-between; /* Distribute space between items */
-  margin: 1vh auto;
-  z-index: 11;
-  text-align: justify;
-  background-color: rgba(0, 0, 0, 0.00);
-  padding: 0;
-  width: 80%;
->>>>>>> fa7161c (awas banyak haters wkwkw)
 }
   
 .card {
   padding: 5vh;
-<<<<<<< HEAD
   border-radius: 5px 0 5px;
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
   border: none;
@@ -479,30 +452,12 @@ section.elementor-grid-misi {
   justify-self: center; /* Pusatkan elemen secara horizontal dalam grid area */
   left: 30vh;
   z-index: 3;
-=======
-  border-radius: 2px 5px;
-  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
-  border: none;
-  background-color: rgba(143, 143, 143, 0.4);
-  flex: 0 1 calc(33.33% - 20px); /* Allow cards to grow equally */
-  margin: 10px; /* Add margin for spacing */
-  min-width: 300px; /* Ensure minimum width for responsiveness */
-}
-
-/* Mengatur ukuran kartu di bawah */
-.card:nth-child(n+4) {
-  flex: 0 1 calc(50% - 20px); /* Dua kartu di bawah */
->>>>>>> fa7161c (awas banyak haters wkwkw)
 }
   
 .event-osis {
   padding: 5rem;
   text-align: center;
   height: 100vh;
-<<<<<<< HEAD
-=======
-  background-color: #FFCC00;
->>>>>>> fa7161c (awas banyak haters wkwkw)
 }
 
 .event-osis .elementor-shape-cross {
@@ -538,13 +493,6 @@ section.elementor-grid-misi {
   justify-content: space-between;
 }
 
-<<<<<<< HEAD
-=======
-.flex-event article {
-  background-color: #f4f4f4;
-}
-
->>>>>>> fa7161c (awas banyak haters wkwkw)
 .tag-eventnye {
   flex: 1;
   margin: 0 2rem;
@@ -626,10 +574,6 @@ transition: opacity 0.3s ease-in 0.4s;
   .jumbotron-text h6 {
     font-size: 1em;
   }
-<<<<<<< HEAD
-=======
-  
->>>>>>> fa7161c (awas banyak haters wkwkw)
 }
 
 @media (max-width: 480px) {
@@ -913,53 +857,6 @@ button:active {
   .jmbtrn {
     width: 90%;
   }
-<<<<<<< HEAD
-=======
-  .text-overlay h2, h1.headertext, h6 {
-    font-size: 1vh;
-  }
-  .logo img {
-    width: 80%;  /* Adjust the size of the logo */
-  }
-  header {
-    padding: 10px;
-    text-align: center;  /* Center align the header content */
-  }
-
-  .elementor-heading-title {
-    font-size: 2.5vh;  /* Adjust font size for better readability */ 
-  }
-
-  .visi p {
-    font-size: 1.2vh;  /* Adjust font size for better readability */
-  }
-
-  article.card {
-    padding: 5%;
-    display: inline-block;
-    font-size: 1vh;
-    transform: none;
-    -webkit-font-smoothing: antialiased; /* Smoothing for Webkit browsers */
-    -moz-osx-font-smoothing: grayscale; /* Smoothing for Firefox */
-  }
-
-  section.elementor-grid-misi {
-    margin: 1vh auto;
-    overflow: hidden;
-  }
-
-  .elementor-widget-container {
-    padding: 0;
-    height: auto;
-  }
-
-  svg {
-    display: block;
-    height: auto;
-    width: 100%;
-    margin-bottom: -1.5px;
-  }
->>>>>>> fa7161c (awas banyak haters wkwkw)
 
   /* Sesuaikan gaya atau tata letak elemen lain sesuai kebutuhan */
 }
