@@ -348,11 +348,10 @@ section {
 
 .shape-background-container {
   position: absolute; /* Posisi absolut agar bisa ditumpuk di atas elemen lain */
-  top: 0; /* Tempatkan di bagian atas kontainer */
+  top: 120vh; /* Tempatkan di bagian atas kontainer */
   left: 0; /* Tempatkan di sisi kiri kontainer */
   width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kontainer */
-  height: auto; /* Menjaga rasio aspek gambar */
-  z-index: 1; /* Pastikan gambar berada di bawah konten lain */
+  z-index: 0; /* Pastikan gambar berada di bawah konten lain */
   object-fit: cover; /* Memastikan gambar menutupi area kontainer dengan rasio yang baik */
 }
 
@@ -366,7 +365,7 @@ section {
   margin: 1rem 0;
   z-index: 3;
   position: relative;
-
+  margin-top: 10vh;
 }
 
 .elementor-shape-cross {
@@ -3103,6 +3102,15 @@ button:active {
 --------------------------------------------------------------*/
 /* Blog Section - Blog Page
 ------------------------------*/
+.blog svg path {
+  box-sizing: border-box;
+  overflow: hidden; /* Mencegah overflow */
+  width: 100%; /* Sesuaikan dengan kebutuhan */
+  height: auto; /* Sesuaikan dengan kebutuhan */
+  padding: 0; /* Pastikan tidak ada padding */
+  margin: 0; /* Pastikan tidak ada margin */
+}
+
 .blog .posts-list article {
   box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
   padding: 5% 0;
