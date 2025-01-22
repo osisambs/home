@@ -450,16 +450,19 @@ section.elementor-grid-misi {
   margin: 0 auto; 
   text-align: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .event-img img {
   max-width: 100%;
   margin: 0 5px;
+  transition: transform 0.5s ease-out;
+  transform: scale(1.05);
 }
 
 .post-img img:hover {
+  transition: transform 0.5s ease-in;
   transform: scale(1.05);
-  transition: ease-out 0.5s;
 }
 
 .flex-event {
@@ -954,10 +957,15 @@ button:active {
 }
 
 /* Aturan CSS untuk tampilan pada tablet (ukuran layar ≤ 1024px) */
-@media screen and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   /* Hide the social links in the header */
   .header-social-links {
     display: none;
+  }
+
+  #navmenu ul {
+    height: 50vh;
+    position: absolute;
   }
 
   /* Display social links within the mobile navigation */
@@ -988,8 +996,40 @@ button:active {
     font-style: normal;
     color: #3c27fd;
   }
+  .shape-background-container {
+    position: absolute; /* Posisi absolut agar bisa ditumpuk di atas elemen lain */
+    top: 120vh; /* Tempatkan di bagian atas kontainer */
+    left: 0; /* Tempatkan di sisi kiri kontainer */
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan lebar kontainer */
+    z-index: 0; /* Pastikan gambar berada di bawah konten lain */
+    object-fit: cover; /* Memastikan gambar menutupi area kontainer dengan rasio yang baik */
+  }
+  .visi p {
+    font-size: 1.5vh;  /* Adjust font size for better readability */
+    padding: 0 8%;
+  }
+  .elementor-heading-title {
+    font-size: 3vh;  /* Adjust font size for better readability */
+    margin: 1vh;
+  }
+  .post-img img {
+    display: block;
+    object-fit: cover;
+    height: 100%;  /* Make sure images fit within the container */
+  }
+  article {
+    display: inline-block; /* make cards display in a row*/
+    width: calc(100% - 1px); /* Two columns, adjust spacing as needed */
+    vertical-align: top; /*Align cards to the top*/
+    box-sizing: border-box; /*Make padding and border included in width */
+  }
+  .elementor-widget-container {
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    z-index: 3;
+  }
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
